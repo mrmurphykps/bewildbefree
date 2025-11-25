@@ -1,6 +1,177 @@
-body{font-family:Arial;background:#f4f1e8;color:#2e3b27;margin:0;}
-header{text-align:center;background:#354a21;color:#f4f1e8;padding:20px;}
-nav ul{display:flex;list-style:none;margin:0;padding:0;background:#6a4f34;}
-nav li{flex:1;} nav a{display:block;padding:12px;color:#f4f1e8;text-decoration:none;font-weight:bold;text-align:center;}
-nav a:hover,nav a.active{background:#b33d26;}
-main{padding:20px;max-width:900px;margin:auto;} footer{text-align:center;background:#354a21;color:#f4f1e8;padding:20px;margin-top:40px;}
+/* -------------------------------------------
+   Be Wild Be Free – Nature Minimal Theme
+   Clean, modern, earthy styling
+------------------------------------------- */
+
+/* Global */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: #f4f1e6; /* soft natural cream */
+    color: #2e3b27; /* deep forest green */
+    line-height: 1.7;
+}
+
+/* Layout container */
+main {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #355e3b; /* moss green */
+    padding: 30px 20px;
+    text-align: center;
+    color: #fdfdf9;
+    border-bottom: 5px solid #26472c; /* dark green accent */
+}
+
+header img.logo {
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #6f8f72; /* soft desaturated green */
+    border-bottom: 4px solid #4d684f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 14px 18px;
+    color: #fdfdf9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    transition: background 0.25s ease, opacity 0.2s;
+}
+
+nav a:hover {
+    background: #4d684f;
+    opacity: 0.95;
+}
+
+nav a.active {
+    background: #355e3b;
+}
+
+/* Typography */
+h2 {
+    font-size: 1.8rem;
+    color: #2a442d;
+    border-left: 6px solid #8cae8f;
+    padding-left: 12px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #2e3b27;
+    margin-top: 35px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: #2e3b27;
+    margin-top: 25px;
+}
+
+/* Paragraph spacing */
+p {
+    margin: 16px 0;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 24px;
+    margin: 10px 0 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Card Boxes (used automatically if you wrap content in <div class="card">) */
+.card {
+    background: #ffffff;
+    padding: 20px 25px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 5px solid #8cae8f;
+}
+
+/* Horizontal rule */
+hr {
+    border: 0;
+    border-top: 2px solid #d9d4c5;
+    margin: 40px 0;
+}
+
+/* Footer */
+footer {
+    background: #355e3b;
+    color: #fdfdf9;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 60px;
+    border-top: 4px solid #26472c;
+}
+
+/* Links */
+a {
+    color: #355e3b;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+    nav a {
+        padding: 10px;
+    }
+    main {
+        padding: 0 12px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
